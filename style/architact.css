@@ -9,7 +9,7 @@
 /* shared style */
 
 
-nav,.banner,main{
+nav,.banner,main,footer{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -193,6 +193,46 @@ font-weight: 500;
     margin: 0;
 }
 
+/* footer sections style */
+
+/* .sponsors-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.spons-info{
+    width: 550px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.spons-info h1{
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.spons-info p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.sponsor-logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+.sponsor-logo > img{
+
+    width: 166.76px;
+    height: 50px;
+    border: 2px  green dashed;
+    padding: 10px;
+    
+}
 /* responsive media query */
 
 @media screen and (max-width:576px) {
@@ -209,6 +249,11 @@ font-weight: 500;
     .team-text-container{
         margin: 0 ;
        
+        
+    }
+    .fact-container{
+        
+        grid-template-columns: repeat(1,1fr);
         
     }
 }
